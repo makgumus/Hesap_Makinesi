@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mmakg.hesap_makinesi.HexadecimalCalculateFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="18"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/hex_bolum"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/display"
+        android:text="÷"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/hex_sayi_sil"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/display"
+        android:layout_toLeftOf="@+id/hex_bolum"
+        android:layout_toStartOf="@+id/hex_bolum"
+        android:text="←" />
+
+    <Button
+        android:id="@+id/hex_sayi_temizle"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/hex_sayi_sil"
+        android:layout_toLeftOf="@+id/hex_sayi_sil"
+        android:layout_toStartOf="@+id/hex_sayi_sil"
+        android:text="AC" />
+
+    <Button
+        android:id="@+id/hex_carpim"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/hex_bolum"
+        android:text="X"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/hex_sayi9"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/hex_carpim"
+        android:layout_toLeftOf="@+id/hex_carpim"
+        android:layout_toStartOf="@+id/hex_carpim"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/hex_sayi8"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/hex_sayi9"
+        android:layout_toLeftOf="@+id/hex_sayi9"
+        android:layout_toStartOf="@+id/hex_sayi9"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/hex_sayi7"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/hex_sayi_temizle"
+        android:layout_toLeftOf="@+id/hex_sayi_temizle"
+        android:layout_toStartOf="@+id/hex_sayi_temizle"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/hex_sayif"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@+id/hex_sayi7"
+        android:layout_toLeftOf="@+id/hex_sayi7"
+        android:layout_toStartOf="@+id/hex_sayi7"
+        android:text="F" />
+
+    <Button
+        android:id="@+id/hex_sayie"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@+id/hex_sayif"
+        android:layout_toLeftOf="@+id/hex_sayif"
+        android:layout_toStartOf="@+id/hex_sayif"
+        android:text="E" />
+
+    <Button
+        android:id="@+id/hex_cikarma"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/hex_carpim"
+        android:text="-"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/hex_sayi6"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/hex_cikarma"
+        android:layout_toLeftOf="@+id/hex_cikarma"
+        android:layout_toStartOf="@+id/hex_cikarma"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/hex_sayi5"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/hex_sayi6"
+        android:layout_toLeftOf="@+id/hex_sayi6"
+        android:layout_toStartOf="@+id/hex_sayi6"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/hex_sayi4"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/hex_sayi5"
+        android:layout_toLeftOf="@+id/hex_sayi5"
+        android:layout_toStartOf="@+id/hex_sayi5"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/hex_sayid"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/hex_sayi4"
+        android:layout_toLeftOf="@+id/hex_sayi4"
+        android:layout_toStartOf="@+id/hex_sayi4"
+        android:text="D" />
+
+    <Button
+        android:id="@+id/hex_sayic"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/hex_sayid"
+        android:layout_toLeftOf="@+id/hex_sayid"
+        android:layout_toStartOf="@+id/hex_sayid"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/hex_topla"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/hex_cikarma"
+        android:text="+"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/hex_sayi3"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/hex_topla"
+        android:layout_toLeftOf="@+id/hex_topla"
+        android:layout_toStartOf="@+id/hex_topla"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/hex_sayi2"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/hex_sayi5"
+        android:layout_toLeftOf="@+id/hex_sayi3"
+        android:layout_toStartOf="@+id/hex_sayi3"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/hex_sayi1"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/hex_sayi5"
+        android:layout_toLeftOf="@+id/hex_sayi5"
+        android:layout_toStartOf="@+id/hex_sayi5"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/hex_sayib"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/hex_sayid"
+        android:layout_toEndOf="@+id/hex_sayic"
+        android:layout_toRightOf="@+id/hex_sayic"
+        android:text="B" />
+
+    <Button
+        android:id="@+id/hex_sayia"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/hex_sayib"
+        android:layout_toLeftOf="@+id/hex_sayib"
+        android:layout_toStartOf="@+id/hex_sayib"
+        android:text="A" />
+
+
+    <Button
+        android:id="@+id/hex_sayi_negatif"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/hex_topla"
+        android:layout_toEndOf="@+id/hex_sayi2"
+        android:layout_toRightOf="@+id/hex_sayi2"
+        android:text="±" />
+
+    <Button
+        android:id="@+id/hex_sayi0"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/hex_sayi3"
+        android:layout_toEndOf="@+id/hex_sayi1"
+        android:layout_toRightOf="@+id/hex_sayi1"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/hex_hesapla"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/hex_topla"
+        android:text="="
+        android:textSize="18sp" />
+
+</RelativeLayout>
